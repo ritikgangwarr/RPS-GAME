@@ -1,0 +1,38 @@
+body
+{
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #d5f072, #313138), repeating-radial-gradient(circle at center center, #444cf7, #000000, 10px, transparent 20px, transparent 10px);
+/* background-blend-mode: multiply; */
+}
+
+button img{
+    border-radius: 50%;
+    height: 100px;  
+}
+button
+{
+    background-color: transparent;
+    border: none;
+    
+}
+table th{
+    background-color: blueviolet;
+    color: white;
+}
+table td{
+    background-color: wheat;
+}
+#rst{
+    height: 50px;
+}
+#buttons-container{
+    display: flex;
+  justify-content: center;
+}
+#game-summary-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}

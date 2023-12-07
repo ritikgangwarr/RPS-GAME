@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="resources/styles/index.css">
+    <link rel="icon" href="resources/images/favicon.ico">
+</head>
+<body>
+    <h1>ROCK PAPER SCISSOR</h1>
+    <div id="buttons-container">
+    <BUTTON onclick="userMove='rock';generate_Computer_move(); console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+        <img src="resources/images/rock.png" alt="">
+    </BUTTON>
+    <BUTTON onclick="userMove='paper';generate_Computer_move();console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+        <img src="resources/images/paper.png" alt="">
+    </BUTTON>
+    <BUTTON onclick="userMove='scissors';generate_Computer_move();console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+        <img src="resources/images/scissors.png" alt="">
+    </BUTTON>
+    <BUTTON>
+        <img src="resources/images/reset.jpg" alt="reset" id="rst">
+    </BUTTON>
+    </div>
+    <div id="game-summary-container">
+    <h1>Game Summary</h1>
+    <table>
+        <tr>
+            <th>wins</th>
+            <th>looses</th>
+            <th>Ties</th>
+            <th>Games played</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+    
+</div>
+
+    <h1>Game History</h1>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>user move</th>
+            <th>computer move</th>
+            <th>result</th>
+        </tr>
+    </table>
+<script src="resources/scripts/rps.js"></script>
+</body>
+</html>
