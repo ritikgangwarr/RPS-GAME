@@ -2,6 +2,15 @@ let userMove='';
 computerMove='';
 console.log(computerMove);
 let result='';
+function play(){
+
+}
+const game={
+    wins:0,
+    loses:0,
+    ties:0,
+};
+
 function caputureUserMove(usermove){
     userMove=usermove;
 }
@@ -25,6 +34,22 @@ function evaluateMoves(){
     }
 
 }
+function updateGameScore(){
+    if (result==='win')
+    {
+        game.wins++;
+    }
+    else if (result==='lose')
+    {
+        game.loses++;
+    }
+    else{
+        game.ties++;
+    }
+}
 function showsummary(){
-    console.log(`userMove:  ${userMove} computerMove: ${computerMove} result:  ${result}`);   
+    const gameplayed=game.wins+game.loses+game.ties;
+    console.log(`userMove:  ${userMove} \ncomputerMove: ${computerMove} \nresult:  ${result} \ngameplayed: ${gameplayed}`);
+    // alert(`userMove:  ${userMove} \ncomputerMove: ${computerMove} \n RESULT:  ${result}`);      
+    console.log(game);
 }
