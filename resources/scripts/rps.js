@@ -65,3 +65,10 @@ function showsummary(){
 
     console.log(game);
 }
+function resetgame() {
+    game.wins=0;
+    game.loses=0;
+    game.ties=0;
+    game.games_played=0;
+    showsummary()
+}

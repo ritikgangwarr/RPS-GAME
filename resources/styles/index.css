@@ -3,6 +3,9 @@ body
     background-color: #a7a7eb;
 
 }
+h1{
+    text-align: center;
+}
 
 button img{
     border-radius: 50%;
