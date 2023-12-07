@@ -2,6 +2,9 @@ let userMove='';
 computerMove='';
 console.log(computerMove);
 let result='';
+function caputureUserMove(usermove){
+    userMove=usermove;
+}
 
 function generate_Computer_move(){
     const C = ["rock", "paper", "scissors"];
@@ -21,4 +24,7 @@ function evaluateMoves(){
         result='lose';
     }
 
+}
+function showsummary(){
+    console.log(`userMove:  ${userMove} computerMove: ${computerMove} result:  ${result}`);   
 }

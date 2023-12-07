@@ -10,13 +10,13 @@
 <body>
     <h1>ROCK PAPER SCISSOR</h1>
     <div id="buttons-container">
-    <BUTTON onclick="userMove='rock';generate_Computer_move(); console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+    <BUTTON onclick="caputureUserMove('rock');generate_Computer_move(); evaluateMoves(); showsummary()">
         <img src="resources/images/rock.png" alt="">
     </BUTTON>
-    <BUTTON onclick="userMove='paper';generate_Computer_move();console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+    <BUTTON onclick="caputureUserMove('paper');generate_Computer_move();evaluateMoves(); showsummary()">
         <img src="resources/images/paper.png" alt="">
     </BUTTON>
-    <BUTTON onclick="userMove='scissors';generate_Computer_move();console.log(`userMove : ${userMove} computerMove: ${computerMove}`);evaluateMoves(); console.log(result)">
+    <BUTTON onclick="caputureUserMove('scissor');generate_Computer_move();evaluateMoves(); showsummary()">
         <img src="resources/images/scissors.png" alt="">
     </BUTTON>
     <BUTTON>
