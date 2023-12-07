@@ -7,6 +7,9 @@ h1{
     text-align: center;
 }
 
+#gamehistory{   
+    background-color: aliceblue;
+}
 button img{
     border-radius: 50%;
     height: 100px;  

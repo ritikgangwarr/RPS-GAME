@@ -14,6 +14,8 @@ const game={
     ties:0,
 };
 
+const gameHistory=[];
+
 function caputureUserMove(usermove){
     userMove=usermove;
 }
@@ -50,6 +52,9 @@ function updateGameScore(){
     else{
         game.ties++;
     }
+    const gameHistoryitem={userMove:userMove, computerMove:computerMove,result:result};
+    gameHistory.push(gameHistoryitem);
+    console.log(gameHistory)
 }
 function showsummary(){
     const gameplayed=game.wins+game.loses+game.ties;
@@ -64,6 +69,22 @@ function showsummary(){
     document.getElementById('games_played').innerHTML=gameplayed;
 
     console.log(game);
+    let finalGameHistory=`<tr>
+    <th>#</th>
+    <th>user move</th>
+    <th>computer move</th>
+    <th>result</th>
+</tr>`;
+    for(let i=0; i<gameHistory.length; i++) {
+        finalGameHistory+=`
+        <tr>
+            <th>${i+1}</th>
+            <th>${gameHistory[i].userMove}</th>
+            <th>${gameHistory[i].computerMove}</th>
+            <th>${gameHistory[i].result}</th>
+        </tr>`
+    }
+document.getElementById('gamehistory').innerHTML=finalGameHistory;
 }
 function resetgame() {
     game.wins=0;
@@ -71,4 +92,4 @@ function resetgame() {
     game.ties=0;
     game.games_played=0;
     showsummary()
-}
+}   
