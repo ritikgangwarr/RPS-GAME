@@ -10,13 +10,13 @@
 <body>
     <h1>ROCK PAPER SCISSOR</h1>
     <div id="buttons-container">
-    <BUTTON onclick="caputureUserMove('rock');generate_Computer_move(); evaluateMoves(); updateGameScore();showsummary()">
+    <BUTTON onclick="caputureUserMove('rock');play();">
         <img src="resources/images/rock.png" alt="">
     </BUTTON>
-    <BUTTON onclick="caputureUserMove('paper');generate_Computer_move();evaluateMoves();updateGameScore(); showsummary()">
+    <BUTTON onclick="caputureUserMove('paper');play();">
         <img src="resources/images/paper.png" alt="">
     </BUTTON>
-    <BUTTON onclick="caputureUserMove('scissor');generate_Computer_move();evaluateMoves();updateGameScore(); showsummary()">
+    <BUTTON onclick="caputureUserMove('scissor');play();">
         <img src="resources/images/scissors.png" alt="">
     </BUTTON>
     <BUTTON>
@@ -27,16 +27,16 @@
     <h1>Game Summary</h1>
     <table>
         <tr>
-            <th>wins</th>
+            <th >wins</th>
             <th>looses</th>
             <th>Ties</th>
             <th>Games played</th>
         </tr>
         <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td id="wins">0</td>
+            <td id="loses">0</td>
+            <td id="ties">0</td>
+            <td id="games_played">0</td>
         </tr>
     </table>
     
